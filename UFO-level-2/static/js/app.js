@@ -68,6 +68,12 @@ buildTable(tableData);
 var button = d3.select("#clear-filter-btn");
 button.on("click", function() {
 // select data to be filered  
+document.getElementById('datetime').value = "";
+document.getElementById('city').value = "";
+document.getElementById('state').value = "";
+document.getElementById('country').value = "";
+document.getElementById('shape').value = "";
+// automate the refresh function 
+location.reload();
 
-buildTable(tableData);
   });
